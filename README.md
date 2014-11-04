@@ -57,12 +57,8 @@ of how to structure the CSS of a web application, in an organized scalable way.
 
 * Don't specify units for zero values.
 
-* Declare properties in the following order:
-  1. Positioning (`position`, `top`, `right`, `bottom`, `left`, `z-index`, etc).
-  2. Box-model (`display`, `float`, `width`, `height`, `margin`, `padding`, etc).
-  3. Typography (`font`, `line-height`, `color`, `text-align`, etc).
-  4. Visual (`background`, `border`, `box-shadow` etc).
-  5. Misc (`opacity`, etc).
+* Declare properties in alphabetical order, declaring mixins first if using
+  LESS/SASS.
 
 * Don't use `@import`, add an extra `<link>` tag instead.
 
