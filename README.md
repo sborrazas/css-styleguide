@@ -67,10 +67,10 @@ of how to structure the CSS of a web application, in an organized scalable way.
   ```css
   /* Bad */
   .someElement {
-    margin-top: 8px;
-    margin-right: 7px;
     margin-bottom: 6px;
     margin-left: 5px;
+    margin-right: 7px;
+    margin-top: 8px;
   }
   /* Good */
   .someElement {
@@ -358,9 +358,9 @@ as follows:
 /* components/mainHeader.less */
 /* mainHeader *****************************************************************/
 .mainHeader {
+  background: @mainHeader--background-color;
   height: 80px;
   line-height: 79px;
-  background-color: @mainHeader--background-color;
 }
 
 .mainHeader-title {
@@ -369,8 +369,8 @@ as follows:
 
 .mainHeader-logo {
   float: left;
-  max-height: 40px;
   margin: 20px 0;
+  max-height: 40px;
 }
 
 .mainHeader-nav {
@@ -380,12 +380,12 @@ as follows:
 /* components/contentWrapper.less */
 /* contentWrapper *************************************************************/
 .contentWrapper {
-  max-width: 520px;
   margin: 0 auto;
+  max-width: 520px;
 }
 ```
 
-```
+```html
 <header class="mainHeader">
   <div class="contentWrapper">
     <a href="/">
